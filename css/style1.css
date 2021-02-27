@@ -211,19 +211,16 @@ header div.header-content p{
 
 .info-heading{
     font-weight: 500;
-    font-size: 2.3rem;
+    font-size: 2.5vw;
     padding: 3rem;
     color:rgb(83, 83, 83)
 }
 
 .image-info1 p, .image-info2 p{
-    font-size: 1.3rem;
+    font-size: 1vw;
     padding: 0 3rem;
-    word-spacing: 0.5rem;
-    letter-spacing: 0.2rem;
-    line-height: 2rem;
-    height: 100%;
     color:rgb(83, 67, 67);
+    
 }
 
 section div.container a{
@@ -235,4 +232,66 @@ section div.container a{
     border-radius: 2rem;
     color: red;
     margin: 3rem 0 0 3rem;
+}
+
+/* ######FEATURES STYLING######## */
+
+.features{
+    padding: 10rem ;
+    background-color:rgb(134, 154, 154);
+}
+
+.box-wrapper{
+    box-shadow: 1rem 1rem 1.5rem 0 rgb(77, 76, 76);
+    max-height: 100%;
+}
+
+.box-wrapper::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.fbox-1, .fbox-2, .fbox-3{
+    width: 33.33333%;
+    max-height:100%;
+    float: left;
+    padding: 2.5rem 3.5rem;
+    text-align: center;
+}
+
+.fbox-1, .fbox-3{
+    background-color: #263238;
+    color: white;
+}
+
+.fbox-2{
+    background: linear-gradient(25deg,#d64c7f,#ee4758 50%);
+    color: white;
+}
+
+.box-wrapper i{
+    margin-bottom: 0.5rem;
+}
+
+/* #### FOOTER STYLING###### */
+
+.footer{
+    background-color: #263238;
+    color: #f4f4f4;
+    text-align: center;
+    padding: 3rem;
+}
+
+.social-media i{
+    margin: 1.5rem;
+}
+
+.footer p{
+    margin: 1rem;
+    font-size: 1.2rem;
+    font-style: bold;
+}
+.footer p i{
+    margin: 0 0.5rem;
 }
