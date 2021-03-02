@@ -24,7 +24,7 @@ body{
 
 }
 
-header li.navkey a{
+li.navkey a{
     color: rgb(249, 249, 249);
     text-decoration: none;
     font-size: 1.3rem;
@@ -34,7 +34,7 @@ header li.navkey a{
 }
 
 
-header.header h1.logo{
+h1.logo{
     color: rgb(124, 150, 159);
     float: left;
     font-size: 2.3rem;
@@ -45,7 +45,7 @@ header.header h1.logo{
 }
 
 
-.header .navbar ul.nav-items{
+.navbar ul.nav-items{
     float: right;
     
     
@@ -62,7 +62,7 @@ header.header h1.logo{
     clear: both;
 }
 
-header .nav-items li.navkey{
+.nav-items li.navkey{
     display: inline-block;
     font-size: 1.3rem;
     letter-spacing: 0.13em;
@@ -99,6 +99,11 @@ header li a:hover{
 .text-white{
     color: rgb(232, 223, 223);
 }
+ 
+.bg-color{
+    background:rgb(58, 17, 42);
+}
+
 
 .button{
     display: inline-block;
@@ -223,7 +228,7 @@ header div.header-content p{
     
 }
 
-section div.container a{
+#explore-places div.container a{
     display: inline-block;
     text-decoration: none;
     border: 0.2rem solid rgb(255, 0, 0);
@@ -294,4 +299,231 @@ section div.container a{
 }
 .footer p i{
     margin: 0 0.5rem;
+}
+
+
+/* ####ABOUT PAGE STYLING###### */
+
+.for-about{
+    color: rgb(255, 255, 255);
+    float: left;
+    font-size: 2.3rem;
+    font-weight: 500;
+    
+    padding: 0.7rem;
+}
+
+.navbar li a.updated-link:hover{
+    color: rgb(255, 255, 255);
+    background: rgb(121, 8, 79);
+    border-radius: 0.5rem;
+}
+
+section.about-us .about-heading{
+    font-size: 2.7rem;
+    font-weight: 500;
+}
+
+section.about-us{
+    margin: 5rem 0;
+}
+
+.about-heading::after{
+    content: '';
+    display: block;
+    border-top: 0.5rem solid rgb(105, 25, 76);
+}
+
+ .about-us .container h2+p{
+    margin-top: 3rem;
+    font-size: 1.6rem;
+    word-spacing: 0.5rem;
+    letter-spacing: 0.2rem;
+}
+
+section.about-us div.left{
+    width: 50%;
+    float: left;
+}
+
+section.about-us div.right{
+    width: 50%;
+    float: right;
+}
+
+.about-features{
+    text-align: center;
+    font-size: 1.4rem;
+    margin: 4rem 0;
+}
+
+.about-features::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.left, .right{
+    line-height: 3rem;
+    word-spacing: 0.5rem;
+    letter-spacing: 0.2rem;
+}
+
+.about-us .about-features li::before{
+    content: '\2713';
+    color: rgb(234, 35, 184);
+    font-weight: bold;
+    padding-right: 1rem;
+}
+
+.counts{
+    text-align: center;
+}
+.count-info{
+    float: left;
+    width: 25%;
+    line-height: 2.5rem;
+}
+
+.counts::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.counts p{
+    font-size: 1.3rem;
+}
+
+.counts span{
+    font-size: 2.2rem;
+    font-weight: 700;
+    color:rgb(95, 35, 72);
+}
+
+.reach-us{
+    margin-top: 6rem;
+    background: linear-gradient(43deg, rgba(92,101,141,1) 0%, rgba(4,27,83,1) 42%, rgba(153,73,30,1) 100%);
+    color: rgb(240, 226, 226);
+    box-shadow: 3px 3px 0.8rem #000057;
+}
+
+.reach-us .informing{
+    float: left;
+    width: 60%;
+    text-align: center;
+    margin-top: 1.2rem;
+}
+
+.reach-us .reachus-link{
+    float: right;
+    width: 40%;
+    text-align: center;
+}
+
+.reach-us a{
+    margin: 0.5rem 0;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.5rem 2rem;
+    color: rgb(239, 231, 231);
+    font-weight: 700;
+    font-size: 2rem;
+    border: 3px solid rgb(242, 234, 234);
+
+}
+
+.reach-us p{
+    
+    display: inline-block;
+    font-size: 1.7rem;
+    font-weight: 700;
+    word-spacing: 0.3rem;
+    letter-spacing: 0.2rem;
+}
+
+.reach-us::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* #######Contact us styling###### */
+.contact-box{
+    background-color:rgb(230, 220, 220);
+}
+
+.contact-box .contact-info{
+    width: 49%;
+    float: left;
+    padding: 1rem 0 0 1rem;
+    background-color: white;
+    margin: 4rem 0;
+}
+
+.contact-box .feedback{
+    width: 49%;
+    float: right;
+    padding: 1rem;
+    background-color: white;
+    margin: 4rem 0;
+}
+
+.contact-box .container::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.contact-box .contact-info i{
+    display: inline-block;
+    color: rgb(200, 45, 45);
+}
+
+.contact-box .contact-info h2{
+    display: inline-block;
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 0.7rem;
+}
+
+.contact-box .contact-info p{
+    font-size: 1.3rem;
+    margin-left: 2rem
+}
+
+.contact-info h2{
+    margin-left: 0.5rem;
+}
+
+.feedback h2{
+    font-size: 2.3rem;
+    font-weight: 500;
+}
+
+.feedback h2::after{
+    content: '';
+    display: block;
+    border-top: 0.5rem solid rgb(97, 10, 55);
+}
+
+.fields{
+    margin-top: 1rem;
+    font-size: 1.3rem;
+}
+
+.contact-box .contact-info img{
+    display: inline-block;
+    max-width: 97%;
+    padding-bottom: 2rem;
+    object-fit: cover;
+    object-position: right;
+}
+
+.contact-box .feedback input, textarea, button{
+    outline: none;
+}
+
+.contact-box .feedback textarea{
+    width: 29.8rem;
 }
